@@ -8,12 +8,12 @@ header {
   font-size: 30px;
   font-size: 25px;
 }
-s .weather-hq {
+.weather-hq {
   background: #e5f5f8;
   max-width: 600px;
   margin: 30px auto;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 10px 20px;
   font-family: "Barlow", sans-serif;
 }
 .search-form-input {
