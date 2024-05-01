@@ -18,16 +18,18 @@
       <main>
         <div>
           <br />
-          <form>
+          <form class="search-form" id="search-form">
             <input
               type="search"
               placeholder="Search for a city ..."
               required
+              autocomplete="off"
               class="search-form-input"
+              id="search-form-input"
             />
             <input type="submit" value="Search" class="search-form-button" />
           </form>
-          <h1>Paris</h1>
+          <h1 id="city">Paris</h1>
           <h2>🌧️</h2>
           <h3>10°C</h3>
         </div>
@@ -53,5 +55,6 @@
         👩🏻‍💻
       </footer>
     </div>
+    <script src="src/interaction.js"></script>
   </body>
 </html>
