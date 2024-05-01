@@ -5,14 +5,16 @@ body {
 }
 header {
   padding: 15px 20px;
-  font-size: 20px;
+  font-size: 30px;
+  font-size: 25px;
 }
-.weather-hq {
+s .weather-hq {
   background: #e5f5f8;
   max-width: 600px;
   margin: 30px auto;
   border-radius: 10px;
-  padding: 30px 20px;
+  padding: 10px 15px;
+  font-family: "Barlow", sans-serif;
 }
 .search-form-input {
   background-color: white;
@@ -33,17 +35,22 @@ header {
 }
 h1 {
   text-align: center;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 500;
+  margin-bottom: 0;
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
-h2 {
+.icon {
   text-align: center;
-  font-size: 40px;
+  scale: (2);
 }
 h3 {
   text-align: center;
   font-size: 25px;
   font-weight: 500;
+  margin-top: 0;
 }
 p {
   text-align: center;
@@ -54,8 +61,11 @@ form {
 footer {
   padding: 15px 20px;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   font-weight: 500;
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 a {
   color: #12495a;
