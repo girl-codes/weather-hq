@@ -14,21 +14,28 @@
   </head>
   <body>
     <div class="weather-hq">
-      <header>Weather HQ</header>
+      <header>WorldWeather HQ 🌎</header>
       <main>
         <div>
+          <br />
+          <form>
+            <input
+              type="search"
+              placeholder="Search for a city ..."
+              required
+              class="search-form-input"
+            />
+            <input type="submit" value="Search" class="search-form-button" />
+          </form>
           <h1>Paris</h1>
           <h2>🌧️</h2>
           <h3>10°C</h3>
-          <form>
-            <input type="search" placeholder="Search for a city ..." required />
-            <input type="submit" value="Show me" />
-          </form>
         </div>
         <div>
           <p>
-            Tuesday 14:49 <br />
-            Humidity: 66%, Wind: 3.13km/h
+            <span class="day-time"> Tuesday, 14:49 </span><br />
+            Humidity: <span class="humidity"> 66%</span> , Wind:
+            <span class="wind"> 3.13km/h</span>
           </p>
         </div>
       </main>
@@ -43,6 +50,7 @@
         <a href="https://weather-hq.netlify.app/" target="_blank">
           hosted on Netlify
         </a>
+        👩🏻‍💻
       </footer>
     </div>
   </body>
