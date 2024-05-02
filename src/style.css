@@ -11,6 +11,7 @@ header {
 .weather-hq {
   background: #e5f5f8;
   max-width: 600px;
+  width: 200%;
   margin: 30px auto;
   border-radius: 10px;
   padding: 10px 20px;
@@ -77,4 +78,24 @@ a {
 .wind {
   color: #f65282;
   font-weight: 600;
+}
+.weather-forecast {
+  margin-top: 20px;
+}
+.weather-forecast-date {
+  font-size: 16px;
+  color: #12495a;
+}
+.day-of-forecast {
+  font-family: "Rouge Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 500;
+}
+.weather-forecast-temperature {
+  font-size: 18px;
+}
+.weather-forecast-temperature-max {
+  font-weight: 500;
 }
