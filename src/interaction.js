@@ -57,6 +57,11 @@ function actionSearchSubmit(event) {
 let searchformElement = document.querySelector("#search-form");
 searchformElement.addEventListener("submit", actionSearchSubmit);
 
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  return days[date.getDay()];
+}
 function getForecast(city) {
   let apiKey = "f12c79ob5a3b7240208d7843e2380dt7";
   let apiURL = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
@@ -65,23 +70,30 @@ function getForecast(city) {
 
 function displayForecast(response) {
   console.log(response.data);
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+
   let forecastHtml = "";
   let forecastElement = document.querySelector("#forecast");
 
   forecastElement.innerHTML = "";
-  days.forEach(function (day) {
-    let forecastHtml = `
+  response.data.daily.forEach(function (day, index) {
+    if (index < 5) {
+      let forecastHtml = `
     <div class="forecast-item">
-        <div class="day-of-forecast">${day}</div>
-        <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="50" />
+        <div class="day-of-forecast">${formatDay(day.time)}</div>
+        <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
         <div class="weather-forecast-temperature">
-          <span class="weather-forecast-temperature-max">18°</span>
-          <span class="weather-forecast-temperature-min">12°</span>
+          <span class="weather-forecast-temperature-max">${
+            Math.round(day.temperature.maximum) + "°"
+          }</span>
+          <span class="weather-forecast-temperature-min">${
+            Math.round(day.temperature.minimum) + "°"
+          }</span>
         </div>
-      </div>`;
+      </div>
+      `;
 
-    forecastElement.innerHTML += forecastHtml;
+      forecastElement.innerHTML += forecastHtml;
+    }
   });
 }
 searchCity("London");
