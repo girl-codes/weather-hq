@@ -1,20 +1,24 @@
 body {
-  background: #c7ebfa;
+  background: #290132;
   font-family: "Barlow", sans-serif;
   font-style: normal;
+  color: white;
+  text-align: center;
 }
 header {
-  padding: 15px 20px;
-  font-size: 30px;
   font-size: 15px;
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+  text-align: left;
 }
 .weather-hq {
-  background: #e5f5f8;
+  background: #382a5f;
+  color: white;
   max-width: 600px;
   width: 200%;
-  margin: 30px auto;
+  margin: 20px auto;
   border-radius: 10px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   font-family: "Barlow", sans-serif;
 }
 .search-form-input {
@@ -26,7 +30,7 @@ header {
   font-size: 15px;
 }
 .search-form-button {
-  background: #12495a;
+  background: #290132;
   padding: 15px 20px;
   border: none;
   border-radius: 5px;
@@ -62,14 +66,15 @@ form {
 footer {
   padding: 15px 20px;
   text-align: center;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   font-family: "Rouge Script", cursive;
   font-weight: 400;
   font-style: normal;
+  color: white;
 }
 a {
-  color: #12495a;
+  color: #f65282;
 }
 .humidity {
   color: #f65282;
