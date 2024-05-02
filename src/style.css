@@ -81,18 +81,23 @@ a {
 }
 .weather-forecast {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
-.weather-forecast-date {
-  font-size: 16px;
-  color: #12495a;
+
+.forecast-item {
+  margin: 0 10px;
 }
+
 .day-of-forecast {
   font-family: "Rouge Script", cursive;
   font-weight: 400;
   font-style: normal;
   font-size: 30px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
+
 .weather-forecast-temperature {
   font-size: 18px;
 }
