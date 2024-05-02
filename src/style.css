@@ -83,6 +83,7 @@ a {
   margin-top: 20px;
   display: flex;
   justify-content: space-around;
+  text-align: center;
 }
 
 .forecast-item {
@@ -104,8 +105,9 @@ a {
 }
 .weather-forecast-temperature-max {
   font-weight: 500;
+  justify-content: space-around;
 }
 .weather-forecast-icon {
   width: 100%;
-  margin-left: -15px;
+  justify-content: space-around;
 }
